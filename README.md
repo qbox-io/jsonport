@@ -1,3 +1,5 @@
+This is a fork from https://github.com/xiaost/jsonport with convience functions added for error handleing. It's mainly for internal use.
+
 
 jsonport [![GoDoc](https://godoc.org/github.com/xiaost/jsonport?status.png)](https://godoc.org/github.com/xiaost/jsonport)
 ====
