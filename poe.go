@@ -100,5 +100,5 @@ func (j Json)  PoeValues() (ret []Json) {
 
 func (j Json)  Exists(keys ...interface{}) (bool) {
 	t := j.Get(keys...).Type()
-	return t != NULL
+	return (t != NULL) && (t != INVALID)
 }
