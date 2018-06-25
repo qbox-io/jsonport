@@ -97,3 +97,8 @@ func (j Json)  PoeValues() (ret []Json) {
 	jgh.PanicOnErr(err)
 	return
 }
+
+func (j Json)  Exists(keys ...interface{}) (bool) {
+	type := j.Get(keys...).Type()
+	return type != NULL
+}
